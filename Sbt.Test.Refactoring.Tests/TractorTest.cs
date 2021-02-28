@@ -1,9 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Sbt.Test.Refactoring.Tests
 {
@@ -38,7 +33,7 @@ namespace Sbt.Test.Refactoring.Tests
             Assert.AreEqual(Orientation.North, tractor.Orientation);
         }
 
-        [TestMethod]
+        [TestMethod] // Тест мне не понятен. Тестируется выход за границы поля (отрицательные координаты), что должно по логике приводить к падению, а не к продолжению работы.
         public void TestShouldTurnAndMoveInTheRightDirection()
         {
             Tractor tractor = new Tractor();

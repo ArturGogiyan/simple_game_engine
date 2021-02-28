@@ -44,10 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Orientation.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tractor.cs" />
-    <Compile Include="TractorInDitchException.cs" />
+    <Compile Include="**\*.cs" Exclude="obj\**\*.cs;node_modules\**\*.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
